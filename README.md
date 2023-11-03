@@ -1,73 +1,54 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Todo List Application - Backend (Hexagonal Architecture)
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+This is the backend component of the Todo List application, built using Nest.js and designed upon the robust and modular Hexagonal Architecture for enhanced scalability and maintainability.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Overview
 
-## Description
+The backend part of the Todo List application is developed with Nest.js, a powerful Node.js framework, following the principles of the Hexagonal Architecture. This architecture separates the application into distinct layers, allowing for better organization, maintainability, and adaptability.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Features
+
+- **Hexagonal Architecture Design:** Utilizes a layered architecture for improved modularity and separation of concerns.
+- **Adapters and Ports:** Defines clear boundaries between internal and external services for flexible integrations.
+- **Scalability and Maintainability:** Designed to accommodate changes and expansions while maintaining a clear structure.
+
+## Tech Stack
+
+- **Nest.js:** Utilized as the primary backend framework for creating APIs based on a modular design.
+- **Database (PostgreSQL):** Integrated for storing task data.
 
 ## Installation
 
-```bash
-$ npm install
-```
+1. Clone the repository:
 
-## Running the app
+   ```bash
+   git clone https://github.com/alexarevalo9/todo-list-back-hexagonal-architecture
+   ```
 
-```bash
-# development
-$ npm run start
+2. Install the dependencies:
 
-# watch mode
-$ npm run start:dev
+   ```bash
+   npm install
+   ```
 
-# production mode
-$ npm run start:prod
-```
+3. Set up the database and environment variables as required.
 
-## Test
+4. Start the backend server:
 
-```bash
-# unit tests
-$ npm run test
+   ```bash
+   npm run start:dev
+   ```
 
-# e2e tests
-$ npm run test:e2e
+## Hexagonal Architecture Overview
 
-# test coverage
-$ npm run test:cov
-```
+The backend follows the Hexagonal Architecture, comprising various layers:
 
-## Support
+- **Domain Layer:** Contains core business logic and entities.
+- **Application Layer:** Implements use cases and orchestrates the flow of data.
+- **Infrastructure Layer:** Deals with external concerns such as databases, APIs, and other external services.
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+Please refer to the codebase for detailed insights into the architectural layers and their functionalities.
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
+This project is licensed under the MIT license. See the [LICENSE](https://github.com/alexarevalo9/todo-list-back-hexagonal-architecture/blob/main/LICENSE) file for more details.
